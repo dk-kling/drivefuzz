@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <name>ds4_driver</name>
+  <version>0.1.0</version>
+  <description>The ds4_driver package</description>
+  <maintainer email="aohsato@gmail.com">Akihito Ohsato</maintainer>
+  <license>Apache 2</license>
+  <author email="aohsato@gmail.com">Akihito Ohsato</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <export>
+  </export>
+</package>

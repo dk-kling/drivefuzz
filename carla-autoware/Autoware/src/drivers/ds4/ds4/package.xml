@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <name>ds4</name>
+  <version>0.1.0</version>
+  <description>The ds4 package</description>
+  <maintainer email="aohsato@gmail.com">Akihito Ohsato</maintainer>
+  <license>TODO</license>
+  <author email="aohsato@gmail.com">Akihito Ohsato</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>ds4_driver</run_depend>
+  <run_depend>ds4_msgs</run_depend>
+  <export>
+  </export>
+</package>

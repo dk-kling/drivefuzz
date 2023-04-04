@@ -1,0 +1,9 @@
+105,106c105,107
+<   double denominator = 2 * calcRelativeCoordinate(target, current_pose).y;
+<   double numerator = pow(getPlaneDistance(target, current_pose.position), 2);
+---
+>   geometry_msgs::Point pt = calcRelativeCoordinate(target, current_pose);
+>   const double numerator = pt.x * pt.x + pt.y * pt.y;
+>   const double denominator = 2.0 * pt.y;
+113d113
+<   // ROS_INFO("radius : %lf", radius);

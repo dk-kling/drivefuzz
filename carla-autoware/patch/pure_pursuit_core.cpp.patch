@@ -1,0 +1,16 @@
+104c135,147
+<       ROS_WARN("Necessary topics are not subscribed yet ... ");
+---
+>       if (!is_pose_set_)
+>       {
+>         ROS_WARN_THROTTLE(5, "[pure_pursuit] Waiting for current_pose topic ...");
+>       }
+>       if (!is_waypoint_set_)
+>       {
+>         ROS_WARN_THROTTLE(5, "[pure_pursuit] Waiting for final_waypoints topic ...");
+>       }
+>       if (!is_velocity_set_)
+>       {
+>         ROS_WARN_THROTTLE(5, "[pure_pursuit] Waiting for current_velocity topic ...");
+>       }
+> 

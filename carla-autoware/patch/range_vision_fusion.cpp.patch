@@ -1,0 +1,4 @@
+437c437
+<     ROS_INFO("[%s] Empty Detections. Make sure the vision and range detectors are running.", __APP_NAME__);
+---
+>     ROS_INFO_THROTTLE(10, "[range_vision_fusion] Empty Detections. Make sure the vision and range detectors are running.");

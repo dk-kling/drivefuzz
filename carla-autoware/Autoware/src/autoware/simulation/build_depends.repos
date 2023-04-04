@@ -1,0 +1,9 @@
+repositories:
+  depends/autoware/common:
+    type: git
+    url: https://github.com/Autoware-AI/common.git
+    version: master
+  depends/autoware/messages:
+    type: git
+    url: https://github.com/Autoware-AI/messages.git
+    version: master

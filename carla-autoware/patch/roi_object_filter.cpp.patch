@@ -1,0 +1,4 @@
+32c32
+<     ROS_INFO("[%s] Empty input messages, for details check the topics : %s and %s.", __APP_NAME__,
+---
+>     ROS_INFO_THROTTLE(10, "[%s] Empty input messages, for details check the topics : %s and %s.", __APP_NAME__,

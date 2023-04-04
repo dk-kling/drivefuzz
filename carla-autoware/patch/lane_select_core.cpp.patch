@@ -1,0 +1,6 @@
+84,85c89,90
+<     ROS_WARN("Necessary topics are not subscribed yet. Waiting...");
+<     return false;
+---
+>     ROS_WARN_THROTTLE(5, "[lane_select_core] Necessary topics are not subscribed yet. Waiting...");
+>     return false;

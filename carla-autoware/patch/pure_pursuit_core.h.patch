@@ -1,0 +1,21 @@
+37a38
+> #include <string>
+81,82c82,83
+<   // constant
+<   const int LOOP_RATE_;  // processing frequency
+---
+>   // control loop update rate
+>   double update_rate_;
+85,86c86
+<   bool is_linear_interpolation_, publishes_for_steering_robot_,
+<     add_virtual_end_waypoints_;
+---
+>   bool is_linear_interpolation_, add_virtual_end_waypoints_;
+97a98
+>   std::string output_interface_;
+110a112
+>   void publishControlCommands(const bool& can_get_curvature, const double& kappa) const;
+113c115
+<   void publishControlCommandStamped(
+---
+>   void publishCtrlCmdStamped(
